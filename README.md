@@ -1,4 +1,3 @@
-Here is the README file converted to Markdown (.md) format:
 GIF and WebP Image Cropper
 Table of Contents
 
@@ -32,4 +31,3 @@ Image	Size
 image1.gif	512x512
 image2.webp	512x512
 Note: The script will skip non-GIF and non-WebP images in the input folder.
-Save this file as README.md in your repository.
