@@ -1,5 +1,4 @@
-Enhanced README
-
+```markdown
 # Image Cropper
 
 ## Table of Contents
@@ -25,39 +24,55 @@ Make sure you have the following installed:
   Install it via pip:  
   ```bash
   pip install Pillow
+  ```
 
-Usage
-Step-by-Step Instructions:
+---
 
-    Clone the Repository
+## Usage
 
-git clone https://github.com/your-username/your-repo-name.git
+### Step-by-Step Instructions:
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
+2. **Install Required Libraries**  
+   ```bash
+   pip install Pillow
+   ```
+3. **Prepare Your Input Folder**  
+   Create a folder named `input_images` in the project directory and add your images to it.
+4. **Run the Script**  
+   ```bash
+   python image_cropper.py
+   ```
+5. **Specify the Crop Size**  
+   When prompted, enter the desired crop size (e.g., `512 512`).
+6. **Get Your Cropped Images**  
+   The cropped images will be saved to the `output_images` folder.
 
-Install Required Libraries
+---
 
-pip install Pillow
+## Example Output
 
-Prepare Your Input Folder
-Create a folder named input_images in the project directory and add your images to it.
-Run the Script
+### Before Cropping:
+| Image       | Size      |
+|-------------|-----------|
+| image1.jpg  | 1024x768  |
+| image2.png  | 640x480   |
 
-    python image_cropper.py
+### After Cropping:
+| Image       | Size      |
+|-------------|-----------|
+| image1.jpg  | 512x512   |
+| image2.png  | 512x512   |
 
-    Specify the Crop Size
-    When prompted, enter the desired crop size (e.g., 512 512).
-    Get Your Cropped Images
-    The cropped images will be saved to the output_images folder.
+### Note:
+- The script will crop all images in the input folder to the specified size.
+- Images smaller than the crop size will be padded with black.
 
-Example Output
-Before Cropping:
-Image	Size
-image1.jpg	1024x768
-image2.png	640x480
-After Cropping:
-Image	Size
-image1.jpg	512x512
-image2.png	512x512
-Note:
+---
 
-    The script will crop all images in the input folder to the specified size.
-    Images smaller than the crop size will be padded with black.
+## License
+
+Feel free to add a license section if applicable.
+```
