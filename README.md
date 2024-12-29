@@ -1,42 +1,63 @@
-GIF and WebP Image Cropper
-==========================
-Table of Contents
------------------
+Enhanced README
 
-    Overview
-    Requirements
-    Usage
-    Example Output
+# Image Cropper
 
-Overview
-------------
-Crop GIF and WebP Images with Ease!
-This Python script crops GIF and WebP images to 512x512 pixels and saves them to a specified output folder. Perfect for creating uniform images for your social media or website.
-Requirements
-------------
-Make Sure You Have:
+## Table of Contents
+- [Overview](#overview)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Example Output](#example-output)
 
-    Python 3.x installed on your system
-    Pillow library installed (pip install Pillow)
+---
+
+## Overview
+
+Crop images effortlessly with this Python script!  
+Specify the input and output folders, define the desired crop size, and let the script handle the rest.
+
+---
+
+## Requirements
+
+Make sure you have the following installed:
+- **Python 3.x**
+- **Pillow library**  
+  Install it via pip:  
+  ```bash
+  pip install Pillow
 
 Usage
------
 Step-by-Step Instructions:
 
-    Clone the repository: git clone https://github.com/your-username/your-repo-name.git
-    Install required libraries: pip install Pillow
-    Create input folder: Create a folder named input_images and add your GIF and WebP images to it.
-    Run the script: python crop_images.py
-    Get your cropped images: The cropped images will be saved to the output folder (output_images).
+    Clone the Repository
+
+git clone https://github.com/your-username/your-repo-name.git
+
+Install Required Libraries
+
+pip install Pillow
+
+Prepare Your Input Folder
+Create a folder named input_images in the project directory and add your images to it.
+Run the Script
+
+    python image_cropper.py
+
+    Specify the Crop Size
+    When prompted, enter the desired crop size (e.g., 512 512).
+    Get Your Cropped Images
+    The cropped images will be saved to the output_images folder.
 
 Example Output
-----------------
 Before Cropping:
 Image	Size
-image1.gif	1024x768
-image2.webp	640x480
+image1.jpg	1024x768
+image2.png	640x480
 After Cropping:
 Image	Size
-image1.gif	512x512
-image2.webp	512x512
-Note: The script will skip non-GIF and non-WebP images in the input folder.
+image1.jpg	512x512
+image2.png	512x512
+Note:
+
+    The script will crop all images in the input folder to the specified size.
+    Images smaller than the crop size will be padded with black.
