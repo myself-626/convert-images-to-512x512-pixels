@@ -1,5 +1,3 @@
-Here’s a suggested `README.md` for your repository:
-
 ```markdown
 # Convert Images to 512x512 Pixels
 
